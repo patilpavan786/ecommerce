@@ -21,15 +21,25 @@ function Register() {
       return;
     }
 
+    if (!/^[\w.%+-]+@[\w.-]+\.[A-Za-z]{2,4}$/.test(email)) {
+      setErrorMessage('Invalid email address.');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      setErrorMessage('Passwords do not match.');
+      return;
+    }
+
     if (password.length < 6) {
       setErrorMessage("password should be at least 6 charectors ");
       return;
     }
     let user = {
-      username: "username",
-      email: "email",
-      password: "password",
-      birthdate: "birthdate",
+      username: username,
+      email: email,
+      password: password,
+      birthdate: birthdate,
     };
     dispatch({
       type: USER,
@@ -80,7 +90,7 @@ function Register() {
         />
 
         <button className={style.submitebtn} type="submit">SignUp</button>
-     
+        {errorMessage && <p style={{ color: "red", fontSize: "1.5rem" }}>{errorMessage}</p>}
         <div className={style.checkAccount}>
         <span style={{color:"Black"}} className={style.Checkbtn}>
        Don,t have an account ?
