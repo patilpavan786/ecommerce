@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(234, 250, 178);
+}
+
+.logo{
+    padding-left: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(230, 110, 80);
+}
+.Search{
+    width:20rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-size: large;
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+}
+.link{
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(24, 21, 21);
+    font-weight: 700;
+    padding-right: 1rem;
+}
+.logoutButton{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(182, 181, 178);
+    padding: 1rem;
+    font-size: larger;
+    
+}
