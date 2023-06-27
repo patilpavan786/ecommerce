@@ -8,6 +8,13 @@ refrance :
  2. react icon   for icons 
  
 
-github ink : - 
+github ink : - https://github.com/patilpavan786/ecommerce.git
+
+
+
+by,
+    Pavan Bhausaheb Patil
+
+    27/6/2023
 
 
